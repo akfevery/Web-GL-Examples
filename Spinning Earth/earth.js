@@ -32,7 +32,7 @@ function initRenderer() {
 var mesh = null;
 function initMesh() {
   var loader = new THREE.JSONLoader();
-  loader.load('Earth-plain.json', function(geometry, materials) {
+  loader.load('Earth.json', function(geometry, materials) {
     mesh = new THREE.Mesh(geometry, new THREE.MeshFaceMaterial(materials));
     scene.add(mesh);
   });
